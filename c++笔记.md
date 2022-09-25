@@ -1613,6 +1613,8 @@ STL（Standard Template Library），**标准模板库**
 
 - 删除尾部元素：`v.pop_back()`
 
+- 返回首元素指针：`v.data()`
+
 - 遍历容器：
 
   ```c++

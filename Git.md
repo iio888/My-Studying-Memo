@@ -4,9 +4,8 @@
 
 ​		客户端并不只提取最新版本的文件快照， **而是把代码仓库完整地镜像下来，包括完整的历史记录**。 这么一来，任何一处协同工作用的服务器发生故障，事后都可以用任何一个镜像出来的本地仓库恢复。 因为每一次的克隆操作，实际上都是一次对代码仓库的完整备份。
 
-[Pro Git](https://git-scm.com/book/en/v2)
-
-[Learn Git Branching](https://learngitbranching.js.org/)
+[Pro Git]:https://git-scm.com/book/en/v2
+[Learn Git Branching]:https://learngitbranching.js.org/
 
 
 

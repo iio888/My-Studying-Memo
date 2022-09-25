@@ -520,6 +520,10 @@ clean:
 
 ​		[Vim Wiki](https://vim.fandom.com/wiki/Vim_Tips_Wiki)
 
+​		[VimGolf](http://www.vimgolf.com/)
+
+​		[Best Vim Tips](https://vim.fandom.com/wiki/Best_Vim_Tips#Basic_use)
+
 
 
 ## 基本操作
