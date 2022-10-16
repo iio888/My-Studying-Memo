@@ -249,3 +249,63 @@ WeakReferenceMessenger.Default.Send(new LoggedInUserChangedMessage(user));
 
 
 
+
+
+## Ioc
+
+​		Ioc, Inversion of Control, **控制反转**。
+
+
+
+### 准备工作
+
+​		The MVVM Toolkit doesn't provide built-in APIs to facilitate the usage of this pattern, as there already exist dedicated libraries specifically for this such as the `Microsoft.Extensions.DependencyInjection` package, which provides a fully featured and powerful DI set of APIs, and acts as an easy to setup and use `IServiceProvider`.
+
+​		此工具包不提供实现控制反转的API，因为 `Microsoft.Extensions.DependencyInjection` 已经提供了足够强大的以来反转API。所以，在使用之前，<u>需要在项目的NuGet包中添加 `Microsoft.Extensions.DependencyInjection`</u>。
+
+
+
+### 配置和解析服务
+
+​		第一步就是声明一个IServiceProvider实例，并<u>初始化所有必要的服务</u>，通常是在程序启动时做这些事。
+
+```c#
+public sealed partial class App : Application
+{
+    public App()
+    {
+        Services = ConfigureServices();
+
+        this.InitializeComponent();
+    }
+
+    /// <summary>
+    /// Gets the current <see cref="App"/> instance in use
+    /// </summary>
+    public new static App Current => (App)Application.Current;
+
+    /// <summary>
+    /// Gets the <see cref="IServiceProvider"/> instance to resolve application services.
+    /// </summary>
+    public IServiceProvider Services { get; }
+
+    /// <summary>
+    /// Configures the services for the application.
+    /// </summary>
+    private static IServiceProvider ConfigureServices()
+    {
+        var services = new ServiceCollection();
+
+        services.AddSingleton<IFilesService, FilesService>();
+        services.AddSingleton<ISettingsService, SettingsService>();
+        services.AddSingleton<IClipboardService, ClipboardService>();
+        services.AddSingleton<IShareService, ShareService>();
+        services.AddSingleton<IEmailService, EmailService>();
+
+        return services.BuildServiceProvider();
+    }
+}
+```
+
+
+
