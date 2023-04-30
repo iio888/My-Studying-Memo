@@ -1,0 +1,169 @@
+{
+  "main": {
+    "id": "6a81d2044a134aae",
+    "type": "split",
+    "children": [
+      {
+        "id": "81fa0875299080dc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2dc4502998d8c5e2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WPF.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "44cfa904b895e356",
+    "type": "split",
+    "children": [
+      {
+        "id": "d7279ae27f65fe09",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "95ad512061c3c245",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d2e68ff6148d5215",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "410bbe207df488d4",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "685f9f9964740bbb",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "WPF.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 260.5
+  },
+  "right": {
+    "id": "a5cf1b49be231500",
+    "type": "split",
+    "children": [
+      {
+        "id": "2467251474b84722",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e452610072ef7408",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "WPF.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "fc2bfe7435941a4f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "WPF.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "160e84b52190bf7e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 286.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "95ad512061c3c245",
+  "lastOpenFiles": [
+    "Prism.md",
+    "study_website.md",
+    "正则表达式.md",
+    "2023-04-30.md",
+    "算法总结.md",
+    "README.md",
+    "WSL 安装.md",
+    "TCPIP网络编程.md",
+    "MySQL.md",
+    "Linux.md",
+    "WPF.md",
+    "CommunityToolKit.md",
+    "未命名.canvas",
+    "c++笔记.assets/动态多态原理.png",
+    "C++笔记.md"
+  ]
+}

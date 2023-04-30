@@ -2,7 +2,7 @@
 
 ​		The `CommunityToolkit.Mvvm` package (aka MVVM Toolkit, formerly named `Microsoft.Toolkit.Mvvm`) is a modern, fast, and modular MVVM library. 
 
-​		This package targets **.NET Standard** so it can be used on <u>any app platform: UWP, WinForms, WPF, Xamarin, Uno, and more;</u> and on any runtime: .NET Native, .NET Core, .NET Framework, or Mono. It runs on all of them. The API surface is identical in all cases, making it perfect for building shared libraries.
+​		This package targets **.NET Standard** so it can be used on <u>any app platform: UWP, WinForms, [[WPF]], Xamarin, Uno, and more;</u> and on any runtime: .NET Native, .NET Core, .NET Framework, or Mono. It runs on all of them. The API surface is identical in all cases, making it perfect for building shared libraries.
 
 
 
@@ -30,11 +30,11 @@
 
 ![Roslyn source generators](https://learn.microsoft.com/en-gb/dotnet/communitytoolkit/images/source-generator-visualization.png)
 
-​		**即：**Source Generator用于减少代码量，在你编写代码的同时，为你生成你经常写的重复性代码，并在编译时加入编译。
+​		**即：** Source Generator用于减少代码量，在你编写代码的同时，为你生成你经常写的重复性代码，并在编译时加入编译。
 
 
 
-**例如：**在ViewModel中编写这一段：
+**例如：** 在ViewModel中编写这一段：
 
 ```c#
 [ObservableProperty]
@@ -58,7 +58,7 @@ public string? Name
 
 ​		The [`ObservableProperty`](https://learn.microsoft.com/en-us/dotnet/api/communitytoolkit.mvvm.componentmodel.ObservablePropertyAttribute) type is an attribute that allows generating **observable properties** from <u>annotated fields</u>. Its purpose is to greatly reduce the amount of boilerplate that is needed to define observable properties.
 
-​		**即，**可绑定属性，通过打标签，帮你减少代码量，自动生成<u>OnPropertyChanged()</u>等，用于与界面UI绑定。类需要继承**ObservableObject**。
+​		**即，** 可绑定属性，通过打标签，帮你减少代码量，自动生成<u>OnPropertyChanged()</u>等，用于与界面UI绑定。类需要继承**ObservableObject**。
 
 #### **How it works**
 
@@ -72,7 +72,6 @@ public partial class ViewModel : ObservableObject
 {
     [ObservableProperty]
     private string? name = "AA";
-
 }
 ```
 
@@ -113,7 +112,7 @@ partial void OnNameChanged(string? value);
 
 ​		Imagine you had a `FullName` **property** you wanted to raise a notification for whenever `Name` changes. You can do that by using the `NotifyPRopertyChangedFor` attribute, like so:
 
-​		**即，**当Name变化时，通知FullName。
+​		**即，** 当Name变化时，通知FullName。
 
 ```c#
 [ObservableProperty]
@@ -123,7 +122,7 @@ private string? name;
 
 ​		Imagine you had a **command** whose execution state was dependent on the value of this property. That is, whenever the property changed, the execution state of the command should be invalidated and computed again. In other words, [`ICommand.CanExecuteChanged`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input.icommand.canexecutechanged) should be raised again. You can achieve this by using the `NotifyCanExecuteChangedFor` attribute:
 
-​		**即，**当Name变化时，通知MyCommand。
+​		**即，** 当Name变化时，通知MyCommand。
 
 ```C#
 [ObservableProperty]

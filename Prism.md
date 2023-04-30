@@ -22,7 +22,7 @@
 
 - 添加NuGet包：**Prism.Unity** 或 Prism.DryIoc
 
-  添加其中一个包后，会自动添加Prism.Wpf, Prism.Core
+  添加其中一个包后，会自动添加Prism.[[Wpf]], Prism.Core
 
 - 修改`App.xaml`
 

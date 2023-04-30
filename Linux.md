@@ -300,7 +300,7 @@ Xshell 用于远程连接服务器，Xftp用于可视化传输文件
 
 - `fd ".*py"`
 
-  查找文件名，支持正则表达式
+  查找文件名，支持[[正则表达式]]
 
 #### 查找文件内容
 
@@ -684,7 +684,7 @@ clean:
 
 ### 插件
 
-​		使用插件只需要创建一个 `~/.vim/pack/vendor/tart/` 的文件夹，然后把插件放到这里（比如通过 `git clone`）。浏览 [Vim Awesome](https://vimawesome.com/) 来了解一些很棒的插件。
+​		使用插件只需要创建一个 `~/.vim/pack/vendor/tart/` 的文件夹，然后把插件放到这里（比如通过 `[[git]] clone`）。浏览 [Vim Awesome](https://vimawesome.com/) 来了解一些很棒的插件。
 
 #### VsVim
 
@@ -693,6 +693,26 @@ clean:
 
 
 
+
+# 终端定制
+
+​		以下方案为 **zsh + oh my zsh**。
+
+
+
+1. 安装zsh
+
+   `sudo yum -y install zsh`
+
+2. 切换终端为 zsh
+
+   `chsh -s /bin/zsh
+
+3. 查看当前终端
+
+   `echo $SHELL`
+
+4. 安装 oh-my-zsh
 
 
 

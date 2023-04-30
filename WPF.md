@@ -80,7 +80,7 @@
 
 #### Action和Func
 
-**Action：**无返回值，可以带有任意数量参数
+**Action：** 无返回值，可以带有任意数量参数
 
 ```C#
 Action BookAction = new Action(Book);
@@ -100,7 +100,7 @@ public void Book(string BookName)
 }
 ```
 
-**Func：**具有返回值和参数
+**Func：** 具有返回值和参数
 
 ```c#
 Func<string> RetBook = new Func<string>(FuncBook);

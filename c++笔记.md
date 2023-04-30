@@ -21,11 +21,10 @@ namespace Han{
 ### 访问
 
 - `Han::a = 1;`
-
-- ```c++
-  using Han::a;
-  a = 1;
-  ```
+```c++
+using Han::a;
+a = 1;
+```
 
 - `using namespace Han;`
 
@@ -57,7 +56,6 @@ namespace Han{
 #### 2 `cin.get()`
 
 ​		读取每个字符，可以以EOF结束
-
 
 
 
